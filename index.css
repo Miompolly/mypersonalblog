@@ -128,10 +128,7 @@ nav {
 /* container */
 
 
-main {
-    margin-left: 100px;
-    background-color: #1f1f38;
-}
+
 
 /* layout */
 .container {
@@ -163,22 +160,16 @@ main {
     display: block;
     position: fixed;
     position: absolute;
-    right: 5rem;
+    right: 2rem;
     width: 30rem;
-    height: 65vh;
+    height: 80vh;
+    float: left;
+    top: 0;
     /* top: rem; */
     border-radius: 2rem;
 
 
 }
-
-.home_img img {
-    position: absolute;
-    /* width: 100%;
-   height: 100%; */
-
-}
-
 .home_container {
     position: relative;
     height: 100%;
@@ -312,55 +303,42 @@ main {
     
     
   }
-  .info_item{
-      display: flex;
-      align-items: center;
-      padding-left: 20px;
-     
-  }
   .info_title{
-      font-weight: bold;
-  }
-  .info_icon{
-      font-size: 1.8rem;
-      left: 2rem;
-      color:var(--color-primary);
-  }
-  .lftt{
+    font-weight: bold;
+}
+.info_icon{
+    font-size: 1.8rem;
+    left: 2rem;
+    color:var(--color-primary);
+}
+.lftt{
+  padding-left: 20px;
+}
+.info_item{
+    display: flex;
+    align-items: center;
     padding-left: 20px;
-}
-.about{
-    position: absolute;
-    left: 8rem;
-    
-}
-.my_image{
-    height: 50vh;
-    width: 162vh;
-    border: 1px solid rgb(61, 59, 59);
-    border-radius: 8px;
+   
 }
 
-
-
-/* about */
-
+ 
 
 
 .about{
     height: 80vh;
-    width: 90%;
-    
+    width: 80%;
+    text-align: center;
+    color: white;
  
 }
 
 .about_info{
-    width: 90%;
+    width: 80%;
     color: white;
     height: 80vh;
-    top: 6rem;
+    /* background-color: white; */
     position: absolute;
-   text-align: left;
+    left: 11.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
@@ -370,16 +348,10 @@ main {
    
     height: 38vh;
 }
-.about__card{
-    border: 1px solid var(--color-light);
-    width: 90%;
-    height: 3rem;
-    border-radius: 8px;
-    text-align: center;
-}
 
 
 .right_about{
+    /* background-color: green; */
     height: 20vh;
   
 }
@@ -394,6 +366,7 @@ main {
 }
 .myInfo h1{
    color: var(--color-primary); 
+   
    width: 100%;
 }
 .abou_info{
@@ -401,10 +374,11 @@ main {
     padding: 3rem 3rem;
     position: absolute;
 }
-.pr,.button p,a{
+.pr p,h2{
+
+    color: var(--color-light);
    text-align: left;
    padding-left: 3rem;
-   color:var(--color-light);
 }
 .right_about{
     display: grid;
@@ -437,4 +411,117 @@ main {
     text-align: center;
     color: white;
    
+}
+
+#services{
+    height: 80vh;
+    width: 85%; 
+    color: white;
+    text-align: center;
+}
+
+
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+.experience__container > div{
+    background: #282862;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.experience__container > div:hover{
+   background: transparent;
+   border-color: var(--color-primary-variant);
+   cursor: pointer;
+}
+.experience__container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+}
+.experience_details{
+    display: flex;
+    gap: 1rem;
+}
+.experience_details_icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+.about__me{
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+45deg,transparent,var(--color-primary)
+,transparent
+    );
+    display: grid;
+    place-items: center;
+
+}
+.about__me-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    overflow: hidden;
+}
+.about__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1.5rem
+}
+.about__card{
+    background: var(--color-bg-variant);
+    border:1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about__card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+.about__icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+.about__card h5{
+    font-size: 0.95rem;
+}
+.about__card small{
+    font-size: 0.7rem;
+    color: var(-color--light);
+}
+.about__content p{
+color: var(--color-light);
+margin: 2rem 0 2.6rem;
+}
+.down{
+    color:white;
+    border: 1px solid var(--color-primary);
+    height: 50px;
 }
